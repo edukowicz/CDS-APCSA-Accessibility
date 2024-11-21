@@ -30,13 +30,13 @@ public class MadeUpDisease
    }
    
 //Mutator Method
-   public void changeVal()
+   private void changeVal()
    {
       val += vowelCount();
    }
 
 //Helper Method
-   public int vowelCount()
+   private int vowelCount()
    {
       int count  = 0;
       for(int i = 0; i < name.length(); i++)
@@ -49,7 +49,7 @@ public class MadeUpDisease
    }
 
 //toString Method
-   public String toString()
+   private String toString()
    {
       String output = "Disease name: " + name;
       output += "\nRating: " + val;
